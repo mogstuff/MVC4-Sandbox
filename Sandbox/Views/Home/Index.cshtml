@@ -1,0 +1,29 @@
+﻿@model IEnumerable<Sandbox.Models.Customer>
+
+@{
+ViewBag.Title = "ASP.NET MVC4 Sandbox";
+}
+ 
+
+
+@section featured {
+<div class="jumbotron">
+<div class="container">
+<h1>@ViewBag.Title.</h1>
+<h2>@ViewBag.Message</h2>
+</div>
+</div>
+}
+<!-- Example row of columns -->
+<div class="row">
+ <ul id="messages">     
+ </ul>
+</div> 
+
+
+@section scripts {
+<script src="~/Scripts/jquery-2.1.1.js"></script>
+<script src="~/Scripts/jquery.signalR-2.1.2.js"></script>
+<script src="~/signalr/hubs"></script>
+<script src="~/Scripts/default.js"></script>
+}
